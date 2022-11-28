@@ -1,0 +1,30 @@
+{
+  "name": "cloudflare-workers-graphql-datasource",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "postinstall": "patch-package",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write ."
+  },
+  "dependencies": {
+    "@apollo/utils.fetcher": "^2.0.0",
+    "@cloudflare/workers-types": "^4.20221111.1"
+  },
+  "devDependencies": {
+    "@apollo/gateway": "^2.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.0",
+    "typescript": "^4.9.3"
+  },
+  "peerDependencies": {
+    "@apollo/gateway": "^2.2.1"
+  }
+}

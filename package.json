@@ -3,13 +3,29 @@
   "version": "0.1.0",
   "exports": "./dist/index.js",
   "type": "module",
+  "license": "MIT",
   "scripts": {
     "build": "rimraf dist && tsc",
     "lint": "eslint .",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write ."
   },
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnalborczyk/cloudflare-workers-graphql-datasource.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dnalborczyk/cloudflare-workers-graphql-datasource/issues"
+  },
+  "homepage": "https://github.com/dnalborczyk/cloudflare-workers-graphql-datasource#readme",
+  "keywords": [
+    "apollo",
+    "server",
+    "federation",
+    "gateway",
+    "cloudflare",
+    "workers"
+  ],
   "dependencies": {
     "@apollo/utils.fetcher": "^2.0.0",
     "@cloudflare/workers-types": "^4.20221111.1"

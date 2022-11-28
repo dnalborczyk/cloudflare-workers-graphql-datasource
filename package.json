@@ -1,7 +1,8 @@
 {
   "name": "cloudflare-workers-graphql-datasource",
-  "type": "module",
+  "version": "0.1.0",
   "exports": "./dist/index.js",
+  "type": "module",
   "scripts": {
     "build": "rimraf dist && tsc",
     "lint": "eslint .",

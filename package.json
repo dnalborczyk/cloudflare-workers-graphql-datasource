@@ -3,9 +3,8 @@
   "type": "module",
   "exports": "./dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "rimraf dist && tsc",
     "lint": "eslint .",
-    "postinstall": "patch-package",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write ."
   },
@@ -23,6 +22,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.0",
+    "rimraf": "^3.0.2",
     "typescript": "^4.9.3"
   },
   "peerDependencies": {

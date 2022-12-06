@@ -1,4 +1,4 @@
-import type { ServiceBinding } from './ServiceBinding'
+import type { ServiceBinding } from './ServiceBinding.js'
 
 export interface ConstructorArgs {
   request: Request

@@ -1,7 +1,7 @@
 import { RemoteGraphQLDataSource } from '@apollo/gateway'
 import type { FetcherResponse, FetcherRequestInit } from '@apollo/utils.fetcher'
-import type { ConstructorArgs } from './ConstructorArgs'
-import type { ServiceBinding } from './ServiceBinding'
+import type { ConstructorArgs } from './ConstructorArgs.js'
+import type { ServiceBinding } from './ServiceBinding.js'
 
 export class CloudflareWorkersGraphQLDataSource extends RemoteGraphQLDataSource {
   readonly #request: Request

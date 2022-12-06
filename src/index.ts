@@ -1,2 +1,2 @@
-export { CloudflareWorkersGraphQLDataSource } from './CloudflareWorkersGraphQLDataSource'
-export type { ServiceBinding } from './ServiceBinding'
+export { CloudflareWorkersGraphQLDataSource } from './CloudflareWorkersGraphQLDataSource.js'
+export type { ServiceBinding } from './ServiceBinding.js'

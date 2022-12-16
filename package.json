@@ -1,6 +1,6 @@
 {
   "name": "cloudflare-workers-graphql-datasource",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "exports": "./dist/index.js",
   "type": "module",
   "license": "MIT",

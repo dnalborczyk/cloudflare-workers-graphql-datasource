@@ -8,8 +8,15 @@ export class CloudflareWorkersGraphQLDataSource extends RemoteGraphQLDataSource 
 
   readonly #serviceBinding: ServiceBinding
 
+  static readonly #url = 'https://example.com'
+
   constructor(args: ConstructorArgs) {
-    super(args)
+    super({
+      // dummy url to satisfy Request construction in RemoteGraphQLDataSource,
+      // which would otherwise fail: new Request(undefined)
+      url: CloudflareWorkersGraphQLDataSource.#url,
+      ...args,
+    })
 
     const { request, serviceBinding } = args
 
@@ -18,7 +25,7 @@ export class CloudflareWorkersGraphQLDataSource extends RemoteGraphQLDataSource 
   }
 
   fetcher = async (
-    url: string, // not used
+    url: string, // unused (not needed)
     init?: FetcherRequestInit,
   ): Promise<FetcherResponse> => {
     return this.#serviceBinding.fetch(this.#request, {
